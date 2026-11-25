@@ -7,3 +7,5 @@ __pycache__/
 *.log
 artifacts/
 verification/junit.xml
+.local-accounts.json
+.local-run.json

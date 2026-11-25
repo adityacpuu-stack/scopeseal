@@ -64,9 +64,32 @@ Deploy with a different provider address, a title, and the JSON-encoded `criteri
 
 The sample is a small text-deliverable agreement. For your own run, replace the entire rubric and artifact before deployment. The 1–8 criteria and 8-item evidence bounds keep each consensus request bounded. Evidence is public: do not submit personal or confidential material.
 
+## Live Studio run
+
+Contract: [`0x1298f420156D97F6587e81D7E2379815Ce162B05`](https://explorer-studio.genlayer.com/address/0x1298f420156D97F6587e81D7E2379815Ce162B05), chain 61999.
+
+Five transactions completed with `FINISHED_WITH_RETURN`, `MAJORITY_AGREE`, and finalized accepted status: deployment, provider acceptance, delivery, requester review seal, and resolution. The final record is `RESOLVED / SCOPE_MET`, with both criteria `MET` and exact excerpts from the delivered release note. This was a synthetic text-deliverable demonstration, with both role wallets controlled by the operator and funded by the Studio faucet. It does not establish performance on arbitrary agreements.
+
+The resolution receipt records three `AGREE`, one `DISAGREE`, and one `IDLE` vote. The evidence establishes majority acceptance, not unanimity. The final-state read and all five receipt summaries are in [verification/studio-run.json](verification/studio-run.json).
+
+To reproduce with fresh local role wallets, run these commands in order after installing dependencies:
+
+```sh
+python scripts/studio_demo.py init
+python scripts/studio_demo.py deploy
+python scripts/studio_demo.py accept
+python scripts/studio_demo.py deliver
+python scripts/studio_demo.py seal
+python scripts/studio_demo.py resolve
+python scripts/studio_demo.py status
+python scripts/studio_demo.py read
+```
+
+The script refuses networks other than Studio chain 61999, uses the current fee-policy quote, and records transaction hashes before waiting. It refuses to submit a recorded step twice. `status` refreshes receipts; wait until all five are finalized before the final-state `read`. It keeps demonstration keys in ignored `.local-accounts.json` and progress in ignored `.local-run.json`; do not fund these keys with real assets. The checked-in evidence describes the original run and is not overwritten by reproduction.
+
 ## Limits and status
 
-- This version has local SDK verification and mocked LLM tests. A live Studio deployment and real-model consensus run have **not yet been completed**; no deployment address or live accuracy claim is supplied.
+- Local SDK verification: 37 passing tests, AST lint, public-schema validation, and closure serialization checks. Live verification covers one small positive example; negative cases are verified locally with mocked LLM results, not claimed as live consensus runs.
 - Evidence is supplied by the two parties. ScopeSeal does not authenticate documents, execute submitted code, fetch linked resources, or prove that real-world work happened. A URL string is not its content.
 - The requester must seal a review before resolution. An uncooperative party can stall the workflow. There is no deadline, timeout, arbitration override, or payout mechanism.
 - Prompt instructions are treated as untrusted evidence, but prompts are not a complete defense against model manipulation. Independent evaluation reduces single-answer trust; it does not establish immunity to correlated mistakes.
