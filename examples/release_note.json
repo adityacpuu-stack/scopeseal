@@ -1,0 +1,13 @@
+{
+  "title": "ScopeSeal release note",
+  "criteria": [
+    {"id": "C1", "requirement": "The delivered release note must name the product ScopeSeal."},
+    {"id": "C2", "requirement": "The release note must explain that missing evidence remains unresolved."}
+  ],
+  "delivery": [
+    {"label": "Complete release note", "text": "ScopeSeal records agreed scope. Missing evidence remains unresolved; it never becomes automatic approval."}
+  ],
+  "review": [
+    {"label": "Reviewer note", "text": "The supplied release note is the complete artifact for this agreement."}
+  ]
+}

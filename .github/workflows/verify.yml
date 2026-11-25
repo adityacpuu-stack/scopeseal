@@ -1,0 +1,27 @@
+name: Verify ScopeSeal
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  contract:
+    runs-on: ubuntu-latest
+    env:
+      GENVM_VERSION: v0.6.0-rc17
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.14'
+          cache: pip
+      - uses: actions/cache@v4
+        with:
+          path: ~/.cache/gltest-direct
+          key: genvm-v0.6.0-rc17-scopeseal-sdk-v1
+      - run: pip install -r requirements.txt
+      - run: genvm-lint lint contracts/scopeseal.py --json
+      - run: pytest -q --junitxml=verification/junit.xml
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: verification
+          path: verification/junit.xml
