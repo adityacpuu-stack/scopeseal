@@ -4,6 +4,14 @@ ScopeSeal is a standalone GenLayer contract for reviewing a written deliverable 
 
 The useful boundary is a **frozen evidence packet**. The requester cannot change the criteria after deployment. The provider must accept before delivering. Neither party can replace submitted evidence. Resolution is available only after the requester has sealed a response, and either party can then request it once.
 
+## Web application
+
+[Open the public ScopeSeal demo](https://scopeseal-review.adityapangestu.chatgpt.site). Read the finalized example without a wallet, follow each quotation back to its evidence, export the record, or connect a wallet to create and complete a new agreement on GenLayer Studio (61999).
+
+The [frontend source and run instructions](frontend/README.md) include role-aware actions, fee confirmation, wrong-chain protection and receipt recovery after reload. A separate browser-driven run finalized all five transactions on contract [`0x1614a71eEB3E8BF0E5630C5fE8631BE9Be79A33b`](https://explorer-studio.genlayer.com/address/0x1614a71eEB3E8BF0E5630C5fE8631BE9Be79A33b). Its result is `RESOLVED / SCOPE_MET`; the requester sealed an empty review. See [public browser-run evidence](frontend/verification/browser-live.json), [UI checks](frontend/verification/ui-checks.json), and the [delivery review](frontend/verification/delivery-gate.md). Both ephemeral role wallets were controlled by the verification runner. No commercial wallet popup automation is claimed.
+
+This is an interface improvement to the same contract. It does not claim a second accepted contribution or an additional reward.
+
 ## State and authority
 
 | Phase | Allowed action | Caller | Next phase |

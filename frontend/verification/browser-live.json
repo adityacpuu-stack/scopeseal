@@ -1,0 +1,126 @@
+{
+  "chain_id": 61999,
+  "actors": {
+    "requester": "0x1c158784A829866f536bCAf870Be415a627f0148",
+    "provider": "0xf9c24B8633A07b5a3C801D75c57982FD2c4F1369"
+  },
+  "note": "Browser integration verification with two ephemeral wallets controlled by one operator. No real customer work.",
+  "transactions": [
+    {
+      "role": "requester",
+      "hash": "0x07d8d597cd953c8640f58e42ad80f1dcadd003e3694b711dcbb94f695f82cded",
+      "receipt": {
+        "lifecycle": {
+          "state": "finalized",
+          "outcome": "accepted"
+        },
+        "execution": "FINISHED_WITH_RETURN",
+        "result": "MAJORITY_AGREE"
+      }
+    },
+    {
+      "role": "provider",
+      "hash": "0x243ef71ca4d62caa4129872f56152e24242b91597dbffbd187f821a5dee341c9",
+      "receipt": {
+        "lifecycle": {
+          "state": "finalized",
+          "outcome": "accepted"
+        },
+        "execution": "FINISHED_WITH_RETURN",
+        "result": "MAJORITY_AGREE"
+      }
+    },
+    {
+      "role": "provider",
+      "hash": "0x8efdc890e8599be7eedbd60b6e77b039929e4efe0025ccc08be83c1abd4fa434",
+      "receipt": {
+        "lifecycle": {
+          "state": "finalized",
+          "outcome": "accepted"
+        },
+        "execution": "FINISHED_WITH_RETURN",
+        "result": "MAJORITY_AGREE"
+      }
+    },
+    {
+      "role": "requester",
+      "hash": "0x7456bb83df3203d28cd4e8715c5d31f5589c84f772de9317291289ca6ad2f37e",
+      "receipt": {
+        "lifecycle": {
+          "state": "finalized",
+          "outcome": "accepted"
+        },
+        "execution": "FINISHED_WITH_RETURN",
+        "result": "MAJORITY_AGREE"
+      }
+    },
+    {
+      "role": "requester",
+      "hash": "0x88b8cb6d8a136f0998e0b26aef1eb74d9afe9ff5b2cd1142b16935b5d473af91",
+      "receipt": {
+        "lifecycle": {
+          "state": "finalized",
+          "outcome": "accepted"
+        },
+        "execution": "FINISHED_WITH_RETURN",
+        "result": "MAJORITY_AGREE"
+      }
+    }
+  ],
+  "checks": [
+    "Real browser UI: deploy, accept, deliver, empty review seal, resolve, final read",
+    "No overflow at 360px",
+    "No overflow at 768px",
+    "No overflow at 1024px",
+    "No overflow at 1440px"
+  ],
+  "contract": "0x1614a71eEB3E8BF0E5630C5fE8631BE9Be79A33b",
+  "record": {
+    "criteria": [
+      {
+        "id": "C1",
+        "requirement": "The delivered release note must name the product ScopeSeal."
+      },
+      {
+        "id": "C2",
+        "requirement": "The release note must explain that missing evidence remains unresolved."
+      }
+    ],
+    "delivery": [
+      {
+        "label": "Complete release note",
+        "text": "ScopeSeal records agreed scope. Missing evidence remains unresolved; it never becomes automatic approval."
+      }
+    ],
+    "findings": [
+      {
+        "citations": [
+          {
+            "item": 0,
+            "quote": "ScopeSeal records agreed scope. Missing evidence remains unresolved; it never becomes automatic approval.",
+            "source": "delivery"
+          }
+        ],
+        "id": "C1",
+        "status": "MET"
+      },
+      {
+        "citations": [
+          {
+            "item": 0,
+            "quote": "Missing evidence remains unresolved; it never becomes automatic approval.",
+            "source": "delivery"
+          }
+        ],
+        "id": "C2",
+        "status": "MET"
+      }
+    ],
+    "phase": "RESOLVED",
+    "provider": "0xf9c24B8633A07b5a3C801D75c57982FD2c4F1369",
+    "requester": "0x1c158784A829866f536bCAf870Be415a627f0148",
+    "resolution": "SCOPE_MET",
+    "review": [],
+    "title": "ScopeSeal release note"
+  }
+}

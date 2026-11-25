@@ -1,0 +1,14 @@
+{
+  "checks": [
+    "Connect and explicit Studio switch",
+    "Evidence anchor, copy link, record download and live refresh",
+    "Invalid address, explicit archived fallback, return to live state",
+    "Responsive review at 360/390/768/1024/1440px and 200% text",
+    "Review axe WCAG automated scan: zero violations",
+    "Create form, example fill, add/remove criterion; axe scan: zero violations",
+    "Fee review; Escape, back, wallet rejection without a transaction",
+    "Restore real transaction on reload; finalize and dismiss receipt",
+    "Visible keyboard focus; native dialog Escape"
+  ],
+  "consoleErrors": []
+}

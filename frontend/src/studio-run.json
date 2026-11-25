@@ -1,0 +1,268 @@
+{
+  "chain_id": 61999,
+  "rpc": "https://studio.genlayer.com/api",
+  "actors": {
+    "requester": "0xCDEd7d884D9b450fd428fd52ed7bb8e3058ca814",
+    "provider": "0x0786624b177e344d3d4bD28d36028462166e4e94"
+  },
+  "transactions": {
+    "deploy": {
+      "hash": "0x09db51d9cb153352648dc415168ef37c8d9a7f4ed6288a02e07c3f609d7040d4",
+      "receipt": {
+        "hash": "0x09db51d9cb153352648dc415168ef37c8d9a7f4ed6288a02e07c3f609d7040d4",
+        "from_address": "0xCDEd7d884D9b450fd428fd52ed7bb8e3058ca814",
+        "to_address": "0x1298f420156D97F6587e81D7E2379815Ce162B05",
+        "lifecycle": {
+          "state": "finalized",
+          "outcome": "accepted"
+        },
+        "txExecutionResultName": "FINISHED_WITH_RETURN",
+        "result_name": "MAJORITY_AGREE",
+        "last_round": {
+          "round": "0",
+          "leader_index": "0",
+          "votes_committed": "5",
+          "votes_revealed": "5",
+          "appeal_bond": "0",
+          "rotations_left": "3",
+          "result": 1,
+          "round_validators": [
+            "0x1B490819e040562a5fb40CD64B1c70D4419c38d1",
+            "0x5744305308D62592B7De585e1999c4Ea51E03C29",
+            "0xee46B9Dc4c860149B1d140840284e5374854e746",
+            "0x23A15A452F19D1B616276fedC5B8B51d69082959",
+            "0x725Ab89db6A9DD886Ba71Bc5E63a01070C325bE3"
+          ],
+          "validator_votes_hash": [
+            "0xe8805672242de445e83ecd8278d4056fc28a32e1b6712b43cd78aa2bad17a29b",
+            "0x1997bff400a3be26da16e78f7822176f035f0945de6e217a921c0d73aa8b59c8",
+            "0x40fe02417fc265eaefdc9f02f94ee520ce2b5b7f30990153ba121fdb0b33c7df",
+            "0xb8a7f4ee8ebfb526f37978f54da392d7d0e6c4cef772cbac65b91da9d2ad6af7",
+            "0xbe89f43d638aa4dc2594b952ad09f7c5c2561264fc95774c420dee3fa6ae59f5"
+          ],
+          "validator_votes": [1, 3, 3, 1, 1],
+          "validator_votes_name": ["AGREE", "IDLE", "IDLE", "AGREE", "AGREE"]
+        }
+      }
+    },
+    "accept": {
+      "hash": "0xc7d09ff3f7d835d3d298f95cce216ff6409903cc7b71713d538f1f9ca293dbe8",
+      "receipt": {
+        "hash": "0xc7d09ff3f7d835d3d298f95cce216ff6409903cc7b71713d538f1f9ca293dbe8",
+        "from_address": "0x0786624b177e344d3d4bD28d36028462166e4e94",
+        "to_address": "0x1298f420156D97F6587e81D7E2379815Ce162B05",
+        "lifecycle": {
+          "state": "finalized",
+          "outcome": "accepted"
+        },
+        "txExecutionResultName": "FINISHED_WITH_RETURN",
+        "result_name": "MAJORITY_AGREE",
+        "last_round": {
+          "round": "0",
+          "leader_index": "0",
+          "votes_committed": "5",
+          "votes_revealed": "5",
+          "appeal_bond": "0",
+          "rotations_left": "3",
+          "result": 1,
+          "round_validators": [
+            "0x5e880d85a70De78dDEf86236d57c42e73F560615",
+            "0x1B490819e040562a5fb40CD64B1c70D4419c38d1",
+            "0x88E148Da14d45c5a5DD2DB25E776eBCBCe0Df539",
+            "0xBE58b43DF1d991e054F743Cc5571dD7029F3B888",
+            "0x21e4F7ba6Ec0fbf70C019fbc0F9A797c3ed1F969"
+          ],
+          "validator_votes_hash": [
+            "0xf0ea645332e0d749018c97bf27b60106e6ee174d058a6308d64591a4de21701c",
+            "0xcb4d538025dd5052127d607be43c220c4edc5127f31f1381b6944cf7b740ce07",
+            "0x21324eda5bd810194b06c26a196fd418f68d744e72636b89d6528110c4dd05f4",
+            "0xc730e04a5c65015d9c773683881d4296acaf06a26c296a99c59a9ea54affa7b1",
+            "0xe82b2fb9501af16e21936144679ab9fdcb0c43205000dd114fb64cbf2d28fe79"
+          ],
+          "validator_votes": [1, 1, 3, 1, 3],
+          "validator_votes_name": ["AGREE", "AGREE", "IDLE", "AGREE", "IDLE"]
+        }
+      }
+    },
+    "deliver": {
+      "hash": "0xc76ede14d735708e487b093fd480a6a874012899f2b47e50af3a67f027451f2d",
+      "receipt": {
+        "hash": "0xc76ede14d735708e487b093fd480a6a874012899f2b47e50af3a67f027451f2d",
+        "from_address": "0x0786624b177e344d3d4bD28d36028462166e4e94",
+        "to_address": "0x1298f420156D97F6587e81D7E2379815Ce162B05",
+        "lifecycle": {
+          "state": "finalized",
+          "outcome": "accepted"
+        },
+        "txExecutionResultName": "FINISHED_WITH_RETURN",
+        "result_name": "MAJORITY_AGREE",
+        "last_round": {
+          "round": "0",
+          "leader_index": "0",
+          "votes_committed": "5",
+          "votes_revealed": "5",
+          "appeal_bond": "0",
+          "rotations_left": "3",
+          "result": 1,
+          "round_validators": [
+            "0xBE58b43DF1d991e054F743Cc5571dD7029F3B888",
+            "0x4eeaD269a60bB89c98a23c1BCd0bd101CafD90E0",
+            "0x725Ab89db6A9DD886Ba71Bc5E63a01070C325bE3",
+            "0x88E148Da14d45c5a5DD2DB25E776eBCBCe0Df539",
+            "0x1B490819e040562a5fb40CD64B1c70D4419c38d1"
+          ],
+          "validator_votes_hash": [
+            "0x7913d58be0e59d7ed3b216ccb3a32545717a756cb3f7466749acf27c698ce387",
+            "0x89646e5888ff191c8834894f90e0e82ab597dc86e49823da63616b30152ee56b",
+            "0xf71aa94b7e562da85e1be334f0aecc639fb4a979b5416a31021ff1715f3f39ff",
+            "0x5c0a150a57049e6238590f198533a75703ec7b7e1dca80963f01ad782e32f548",
+            "0xe8805672242de445e83ecd8278d4056fc28a32e1b6712b43cd78aa2bad17a29b"
+          ],
+          "validator_votes": [1, 1, 3, 3, 1],
+          "validator_votes_name": ["AGREE", "AGREE", "IDLE", "IDLE", "AGREE"]
+        }
+      }
+    },
+    "seal": {
+      "hash": "0x3d123cef07b88b7f06b31e434bc3ca4bf6e54127e92a8edd8bc2334a8bc51564",
+      "receipt": {
+        "hash": "0x3d123cef07b88b7f06b31e434bc3ca4bf6e54127e92a8edd8bc2334a8bc51564",
+        "from_address": "0xCDEd7d884D9b450fd428fd52ed7bb8e3058ca814",
+        "to_address": "0x1298f420156D97F6587e81D7E2379815Ce162B05",
+        "lifecycle": {
+          "state": "finalized",
+          "outcome": "accepted"
+        },
+        "txExecutionResultName": "FINISHED_WITH_RETURN",
+        "result_name": "MAJORITY_AGREE",
+        "last_round": {
+          "round": "0",
+          "leader_index": "0",
+          "votes_committed": "5",
+          "votes_revealed": "5",
+          "appeal_bond": "0",
+          "rotations_left": "3",
+          "result": 1,
+          "round_validators": [
+            "0x62718FbDf0509A398aA525C152D60c1F7A9d33D3",
+            "0x725Ab89db6A9DD886Ba71Bc5E63a01070C325bE3",
+            "0xBE58b43DF1d991e054F743Cc5571dD7029F3B888",
+            "0x22Eda431B7fBC1216baE3b077a78c973a8719c58",
+            "0xe358f855C96d8E7243836cf986eb037175B9467e"
+          ],
+          "validator_votes_hash": [
+            "0x5f14ade05db93834dc6e8cdf7a503d90ec375ce7b7128b4875e26cece1cb824b",
+            "0xaca390bb3935ff3675835d3e4667113302ff48c8253c911ea18ee07a8a1a4067",
+            "0x34916968854ab19e1e67be3c501050890ea3d7c10c4c40cfbd3388f3768f1645",
+            "0x2180150de29387478a1d84d54ed0ba8ee97fac7d5bf91c0c65187155f7a876d1",
+            "0x0cafe12883041176f0f25e65a35aed64cd7b29f5bc093056722699e0dc87966c"
+          ],
+          "validator_votes": [1, 3, 3, 1, 1],
+          "validator_votes_name": ["AGREE", "IDLE", "IDLE", "AGREE", "AGREE"]
+        }
+      }
+    },
+    "resolve": {
+      "hash": "0x022b8c560ecfa22c070cf36e2737f02a8dfb4a140b2214c8ad91eaa7081d9086",
+      "receipt": {
+        "hash": "0x022b8c560ecfa22c070cf36e2737f02a8dfb4a140b2214c8ad91eaa7081d9086",
+        "from_address": "0xCDEd7d884D9b450fd428fd52ed7bb8e3058ca814",
+        "to_address": "0x1298f420156D97F6587e81D7E2379815Ce162B05",
+        "lifecycle": {
+          "state": "finalized",
+          "outcome": "accepted"
+        },
+        "txExecutionResultName": "FINISHED_WITH_RETURN",
+        "result_name": "MAJORITY_AGREE",
+        "last_round": {
+          "round": "0",
+          "leader_index": "0",
+          "votes_committed": "5",
+          "votes_revealed": "5",
+          "appeal_bond": "0",
+          "rotations_left": "3",
+          "result": 1,
+          "round_validators": [
+            "0xe358f855C96d8E7243836cf986eb037175B9467e",
+            "0x23A15A452F19D1B616276fedC5B8B51d69082959",
+            "0x813890bC5bEDEB4F5437570962379F04738F18Cb",
+            "0x6fe9DE3d0adc76D6416A13CD8107aaE49A3CF98F",
+            "0xBE58b43DF1d991e054F743Cc5571dD7029F3B888"
+          ],
+          "validator_votes_hash": [
+            "0x67f322a50ea7b9db9a6f092297380e2da07aed64079f7486361f03e0188f8bfe",
+            "0xe25dcb61c8f2031a02cfc24ad96d1baaa6a5bdb26293d602f469187b67aeced1",
+            "0x681bbfdd0b1ba8bab08167e346d22628735af9b49290da3bb782a3abfa2ef04b",
+            "0x0376823e6f2d2b777f5de9e8fe00acddd88d220ea7bf8fce26d3f47d33563fd5",
+            "0x7b54b8c142f5e1be7b3a8e4fc26e62924ed0445cb18b8fd2f7abaef3f9a9c9dc"
+          ],
+          "validator_votes": [4, 1, 3, 1, 1],
+          "validator_votes_name": [
+            "DISAGREE",
+            "AGREE",
+            "IDLE",
+            "AGREE",
+            "AGREE"
+          ]
+        }
+      }
+    }
+  },
+  "note": "Two demonstration roles controlled by the same operator; no real customer work or identity separation is claimed.",
+  "code_sha256": "c164e23f1d415670ee997e781424f29a405c25d4573fbe39ced484746c6922f0",
+  "contract": "0x1298f420156D97F6587e81D7E2379815Ce162B05",
+  "record": {
+    "criteria": [
+      {
+        "id": "C1",
+        "requirement": "The delivered release note must name the product ScopeSeal."
+      },
+      {
+        "id": "C2",
+        "requirement": "The release note must explain that missing evidence remains unresolved."
+      }
+    ],
+    "delivery": [
+      {
+        "label": "Complete release note",
+        "text": "ScopeSeal records agreed scope. Missing evidence remains unresolved; it never becomes automatic approval."
+      }
+    ],
+    "findings": [
+      {
+        "citations": [
+          {
+            "item": 0,
+            "quote": "ScopeSeal records agreed scope.",
+            "source": "delivery"
+          }
+        ],
+        "id": "C1",
+        "status": "MET"
+      },
+      {
+        "citations": [
+          {
+            "item": 0,
+            "quote": "Missing evidence remains unresolved; it never becomes automatic approval.",
+            "source": "delivery"
+          }
+        ],
+        "id": "C2",
+        "status": "MET"
+      }
+    ],
+    "phase": "RESOLVED",
+    "provider": "0x0786624b177e344d3d4bD28d36028462166e4e94",
+    "requester": "0xCDEd7d884D9b450fd428fd52ed7bb8e3058ca814",
+    "resolution": "SCOPE_MET",
+    "review": [
+      {
+        "label": "Reviewer note",
+        "text": "The supplied release note is the complete artifact for this agreement."
+      }
+    ],
+    "title": "ScopeSeal release note"
+  },
+  "record_variant": "latest-final"
+}
